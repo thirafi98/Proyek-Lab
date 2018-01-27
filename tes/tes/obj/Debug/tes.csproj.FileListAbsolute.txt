@@ -1,0 +1,9 @@
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\bin\Debug\tes.exe.config
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\bin\Debug\tes.exe
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\bin\Debug\tes.pdb
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\obj\Debug\tes.Form1.resources
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\obj\Debug\tes.Properties.Resources.resources
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\obj\Debug\tes.csproj.GenerateResource.Cache
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\obj\Debug\tes.exe
+c:\users\asus\documents\visual studio 2015\Projects\tes\tes\obj\Debug\tes.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\tes\tes\obj\Debug\tes.csprojResolveAssemblyReference.cache
