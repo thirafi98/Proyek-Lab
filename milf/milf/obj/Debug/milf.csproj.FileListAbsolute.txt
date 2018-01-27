@@ -1,0 +1,9 @@
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\milf.exe.config
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\milf.exe
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\milf.pdb
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.csprojResolveAssemblyReference.cache
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.Form1.resources
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.Properties.Resources.resources
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.csproj.GenerateResource.Cache
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.exe
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.pdb
