@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+using ZedGraph;
 using System.IO.Ports;
 using PCComm;
 using System.Text.RegularExpressions;
@@ -22,8 +24,11 @@ namespace milf
         CommunicationManager commAT = new CommunicationManager();
         static double xTimeStamp = 0;
 
-        string header, Accx, Accy, Accz, Gyrox, Gyroy, Gyroz;
+        string header, Accx, Accy, Accz, Gyrox, Gyroy, Gyroz;//basic header, acc and gyro
         double roll, pitch, yaw = 000.0;
+        static LineItem Kax, Kay, Kaz;//dun no
+        static RollingPointPairList Lax, Lay, Laz;//probably for latitude
+
 
         string[] data;
 
@@ -32,6 +37,11 @@ namespace milf
         private void timer1_Tick(object sender, EventArgs e)
         {
             UpdateData();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void UpdateData()
@@ -66,8 +76,8 @@ namespace milf
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*GraphPane myPane = zedGraphControl1.GraphPane;
-
+            GraphPane myPane = zedGraphControl1.GraphPane;
+            //for config the zedGraph showed the output it self
             Lax = new RollingPointPairList(300);
             Kax = myPane.AddCurve("acc_roll", Lax, Color.Pink, SymbolType.None);
             Lay = new RollingPointPairList(300);
@@ -78,7 +88,7 @@ namespace milf
             myPane.XAxis.Scale.Max = 30;
             myPane.XAxis.Scale.MinorStep = 1;
             myPane.XAxis.Scale.MajorStep = 5;
-            zedGraphControl1.AxisChange();*/
+            zedGraphControl1.AxisChange();
         }
 
         private void FastTimer(object sender, EventArgs myEventArgs)
@@ -100,8 +110,25 @@ namespace milf
                     Gyrox = data[4];
                     Gyroy = data[5];
                     Gyroz = data[6];
+                    //how many length they can accept
+                    label1.Text = Convert.ToString(line.Length);
+                    //u know it from the line bruv
+                    Lax.Add(xTimeStamp, Convert.ToDouble(data[1]));
+                    Lay.Add(xTimeStamp, Convert.ToDouble(data[2]));
+                    Laz.Add(xTimeStamp, Convert.ToDouble(data[3]));
 
-                    
+                    xTimeStamp = xTimeStamp + 1;
+                    //scaling the zedgraph to axis change
+                    Scale xScale = zedGraphControl1.GraphPane.XAxis.Scale;
+                    if (xTimeStamp > xScale.Max - xScale.MajorStep)
+                    {
+                        xScale.Max = xTimeStamp + xScale.MajorStep;
+                        xScale.Min = xScale.Max - 30.0;
+
+                    }
+                    zedGraphControl1.AxisChange();
+                    zedGraphControl1.Invalidate();
+
                 }
             }
         }
