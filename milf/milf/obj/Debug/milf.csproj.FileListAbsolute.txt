@@ -22,3 +22,5 @@ D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\sv\ZedGraph.resources.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\tr\ZedGraph.resources.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\zh-cn\ZedGraph.resources.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.Resource1.resources
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.control.Resource1.resources

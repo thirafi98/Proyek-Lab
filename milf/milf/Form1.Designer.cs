@@ -49,6 +49,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.airSpeedIndicatorInstrumentControl1 = new milf.AirSpeedIndicatorInstrumentControl();
+            this.altimeterInstrumentControl1 = new milf.AltimeterInstrumentControl();
+            this.attitudeIndicatorInstrumentControl1 = new milf.AttitudeIndicatorInstrumentControl();
+            this.instrumentControl1 = new milf.InstrumentControl();
+            this.headingIndicatorInstrumentControl1 = new milf.HeadingIndicatorInstrumentControl();
+            this.turnCoordinatorInstrumentControl1 = new milf.TurnCoordinatorInstrumentControl();
+            this.verticalSpeedIndicatorInstrumentControl1 = new milf.VerticalSpeedIndicatorInstrumentControl();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -224,11 +231,75 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // airSpeedIndicatorInstrumentControl1
+            // 
+            this.airSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(449, 26);
+            this.airSpeedIndicatorInstrumentControl1.Name = "airSpeedIndicatorInstrumentControl1";
+            this.airSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.airSpeedIndicatorInstrumentControl1.TabIndex = 45;
+            this.airSpeedIndicatorInstrumentControl1.Text = "airSpeedIndicatorInstrumentControl1";
+            // 
+            // altimeterInstrumentControl1
+            // 
+            this.altimeterInstrumentControl1.Location = new System.Drawing.Point(583, 25);
+            this.altimeterInstrumentControl1.Name = "altimeterInstrumentControl1";
+            this.altimeterInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.altimeterInstrumentControl1.TabIndex = 46;
+            this.altimeterInstrumentControl1.Text = "altimeterInstrumentControl1";
+//            this.altimeterInstrumentControl1.Click += new System.EventHandler(this.altimeterInstrumentControl1_Click);
+            // 
+            // attitudeIndicatorInstrumentControl1
+            // 
+            this.attitudeIndicatorInstrumentControl1.Location = new System.Drawing.Point(449, 109);
+            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
+            this.attitudeIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.attitudeIndicatorInstrumentControl1.TabIndex = 47;
+            this.attitudeIndicatorInstrumentControl1.Text = "attitudeIndicatorInstrumentControl1";
+            // 
+            // instrumentControl1
+            // 
+            this.instrumentControl1.Location = new System.Drawing.Point(583, 144);
+            this.instrumentControl1.Name = "instrumentControl1";
+            this.instrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.instrumentControl1.TabIndex = 48;
+            this.instrumentControl1.Text = "instrumentControl1";
+            // 
+            // headingIndicatorInstrumentControl1
+            // 
+            this.headingIndicatorInstrumentControl1.Location = new System.Drawing.Point(449, 195);
+            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
+            this.headingIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.headingIndicatorInstrumentControl1.TabIndex = 49;
+            this.headingIndicatorInstrumentControl1.Text = "headingIndicatorInstrumentControl1";
+            // 
+            // turnCoordinatorInstrumentControl1
+            // 
+            this.turnCoordinatorInstrumentControl1.Location = new System.Drawing.Point(583, 278);
+            this.turnCoordinatorInstrumentControl1.Name = "turnCoordinatorInstrumentControl1";
+            this.turnCoordinatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.turnCoordinatorInstrumentControl1.TabIndex = 50;
+            this.turnCoordinatorInstrumentControl1.Text = "turnCoordinatorInstrumentControl1";
+            // 
+            // verticalSpeedIndicatorInstrumentControl1
+            // 
+            this.verticalSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(449, 278);
+            this.verticalSpeedIndicatorInstrumentControl1.Name = "verticalSpeedIndicatorInstrumentControl1";
+            this.verticalSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.verticalSpeedIndicatorInstrumentControl1.TabIndex = 51;
+            this.verticalSpeedIndicatorInstrumentControl1.Text = "verticalSpeedIndicatorInstrumentControl1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 394);
+            this.ClientSize = new System.Drawing.Size(748, 394);
+            this.Controls.Add(this.verticalSpeedIndicatorInstrumentControl1);
+            this.Controls.Add(this.turnCoordinatorInstrumentControl1);
+            this.Controls.Add(this.headingIndicatorInstrumentControl1);
+            this.Controls.Add(this.instrumentControl1);
+            this.Controls.Add(this.attitudeIndicatorInstrumentControl1);
+            this.Controls.Add(this.altimeterInstrumentControl1);
+            this.Controls.Add(this.airSpeedIndicatorInstrumentControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.zedGraphControl1);
             this.Controls.Add(this.btnSend2);
@@ -277,6 +348,13 @@
         private System.Windows.Forms.Timer timer1;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.Label label1;
+        private AirSpeedIndicatorInstrumentControl airSpeedIndicatorInstrumentControl1;
+        private AltimeterInstrumentControl altimeterInstrumentControl1;
+        private AttitudeIndicatorInstrumentControl attitudeIndicatorInstrumentControl1;
+        private InstrumentControl instrumentControl1;
+        private HeadingIndicatorInstrumentControl headingIndicatorInstrumentControl1;
+        private TurnCoordinatorInstrumentControl turnCoordinatorInstrumentControl1;
+        private VerticalSpeedIndicatorInstrumentControl verticalSpeedIndicatorInstrumentControl1;
     }
 }
 

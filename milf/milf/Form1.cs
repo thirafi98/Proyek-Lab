@@ -44,6 +44,9 @@ namespace milf
 
         }
 
+        
+        
+
         private void UpdateData()
         {
             richTextBox1.Invoke(new EventHandler(delegate
