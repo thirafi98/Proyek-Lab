@@ -56,6 +56,7 @@
             this.headingIndicatorInstrumentControl1 = new milf.HeadingIndicatorInstrumentControl();
             this.turnCoordinatorInstrumentControl1 = new milf.TurnCoordinatorInstrumentControl();
             this.verticalSpeedIndicatorInstrumentControl1 = new milf.VerticalSpeedIndicatorInstrumentControl();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -100,7 +101,7 @@
             // 
             // btnSend1
             // 
-            this.btnSend1.Location = new System.Drawing.Point(200, 27);
+            this.btnSend1.Location = new System.Drawing.Point(207, 23);
             this.btnSend1.Name = "btnSend1";
             this.btnSend1.Size = new System.Drawing.Size(75, 23);
             this.btnSend1.TabIndex = 30;
@@ -195,7 +196,7 @@
             // 
             // btnSend2
             // 
-            this.btnSend2.Location = new System.Drawing.Point(290, 27);
+            this.btnSend2.Location = new System.Drawing.Point(297, 23);
             this.btnSend2.Name = "btnSend2";
             this.btnSend2.Size = new System.Drawing.Size(75, 23);
             this.btnSend2.TabIndex = 42;
@@ -224,7 +225,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(237, 57);
+            this.label1.Location = new System.Drawing.Point(308, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 44;
@@ -246,7 +247,6 @@
             this.altimeterInstrumentControl1.Size = new System.Drawing.Size(75, 76);
             this.altimeterInstrumentControl1.TabIndex = 46;
             this.altimeterInstrumentControl1.Text = "altimeterInstrumentControl1";
-//            this.altimeterInstrumentControl1.Click += new System.EventHandler(this.altimeterInstrumentControl1_Click);
             // 
             // attitudeIndicatorInstrumentControl1
             // 
@@ -288,11 +288,22 @@
             this.verticalSpeedIndicatorInstrumentControl1.TabIndex = 51;
             this.verticalSpeedIndicatorInstrumentControl1.Text = "verticalSpeedIndicatorInstrumentControl1";
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(207, 50);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 52;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 394);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.verticalSpeedIndicatorInstrumentControl1);
             this.Controls.Add(this.turnCoordinatorInstrumentControl1);
             this.Controls.Add(this.headingIndicatorInstrumentControl1);
@@ -355,6 +366,7 @@
         private HeadingIndicatorInstrumentControl headingIndicatorInstrumentControl1;
         private TurnCoordinatorInstrumentControl turnCoordinatorInstrumentControl1;
         private VerticalSpeedIndicatorInstrumentControl verticalSpeedIndicatorInstrumentControl1;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

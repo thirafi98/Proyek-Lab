@@ -27,6 +27,7 @@ namespace milf
         string header, Accx, Accy, Accz, Gyrox, Gyroy, Gyroz;//basic header, acc and gyro
         double roll, pitch, yaw = 000.0;
         static LineItem Kax, Kay, Kaz;//dun no
+        int airAll, head;
         static RollingPointPairList Lax, Lay, Laz;//probably for latitude
 
 
@@ -37,6 +38,11 @@ namespace milf
         private void timer1_Tick(object sender, EventArgs e)
         {
             UpdateData();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +57,15 @@ namespace milf
         {
             richTextBox1.Invoke(new EventHandler(delegate
             {
+                //airSpeedIndicatorInstrumentControl1.SetAirSpeedIndicatorParameters();
+                altimeterInstrumentControl1.SetAlimeterParameters(airAll);
+                attitudeIndicatorInstrumentControl1.SetAttitudeIndicatorParameters(pitch, roll);
+                headingIndicatorInstrumentControl1.SetHeadingIndicatorParameters(head);
+                //instrumentControl1
+                //turnCoordinatorInstrumentControl1.SetTurnCoordinatorParameters();
+                //verticalSpeedIndicatorInstrumentControl1.SetVerticalSpeedIndicatorParameters()
+
+
                 textBox6.Text = header;
                 textBox2.Text = Accx;
                 textBox3.Text = Accy;
@@ -113,8 +128,16 @@ namespace milf
                     Gyrox = data[4];
                     Gyroy = data[5];
                     Gyroz = data[6];
+                    
+
                     //how many length they can accept
                     label1.Text = Convert.ToString(line.Length);
+
+                    head = int.Parse(data[0]);
+                    pitch = double.Parse(data[11]);
+                    airAll = int.Parse(data[10]);
+                    roll = double.Parse(data[12]);
+
                     //u know it from the line bruv
                     Lax.Add(xTimeStamp, Convert.ToDouble(data[1]));
                     Lay.Add(xTimeStamp, Convert.ToDouble(data[2]));
