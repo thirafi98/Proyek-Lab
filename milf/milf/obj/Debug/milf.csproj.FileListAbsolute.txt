@@ -24,3 +24,15 @@ D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\zh-cn\ZedGraph.resources.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\zh-tw\ZedGraph.resources.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.Resource1.resources
 D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.control.Resource1.resources
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\AxInterop.isAnalogLibrary.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.GLControl.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.SceneGraph.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.Serialization.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.WinForms.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.WPF.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\stdole.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.GLControl.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.csproj.CoreCompileInputs.cache
