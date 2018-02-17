@@ -35,4 +35,15 @@ D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\SharpGL.WPF.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\stdole.dll
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.xml
 D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\OpenTK.GLControl.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Computing.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Core.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Drawing.dll
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\GMap.NET.WindowsForms.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Computing.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Core.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\ILNumerics.Drawing.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\GMap.NET.Core.xml
+D:\Materi Lab\Proyek-Lab\milf\milf\bin\Debug\Demo.WindowsForms.exe
+D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.Plotting_Form1.resources
 D:\Materi Lab\Proyek-Lab\milf\milf\obj\Debug\milf.csproj.CoreCompileInputs.cache

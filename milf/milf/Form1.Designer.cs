@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -49,14 +50,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.label1 = new System.Windows.Forms.Label();
-            this.airSpeedIndicatorInstrumentControl1 = new milf.AirSpeedIndicatorInstrumentControl();
-            this.altimeterInstrumentControl1 = new milf.AltimeterInstrumentControl();
-            this.attitudeIndicatorInstrumentControl1 = new milf.AttitudeIndicatorInstrumentControl();
-            this.instrumentControl1 = new milf.InstrumentControl();
-            this.headingIndicatorInstrumentControl1 = new milf.HeadingIndicatorInstrumentControl();
-            this.turnCoordinatorInstrumentControl1 = new milf.TurnCoordinatorInstrumentControl();
-            this.verticalSpeedIndicatorInstrumentControl1 = new milf.VerticalSpeedIndicatorInstrumentControl();
-            this.btnClose = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -73,6 +66,18 @@
             this.lighterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.openGLControl1 = new SharpGL.OpenGLControl();
+            this.gmap = new GMap.NET.WindowsForms.GMapControl();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.verticalSpeedIndicatorInstrumentControl1 = new milf.VerticalSpeedIndicatorInstrumentControl();
+            this.turnCoordinatorInstrumentControl1 = new milf.TurnCoordinatorInstrumentControl();
+            this.headingIndicatorInstrumentControl1 = new milf.HeadingIndicatorInstrumentControl();
+            this.attitudeIndicatorInstrumentControl1 = new milf.AttitudeIndicatorInstrumentControl();
+            this.altimeterInstrumentControl1 = new milf.AltimeterInstrumentControl();
+            this.airSpeedIndicatorInstrumentControl1 = new milf.AirSpeedIndicatorInstrumentControl();
+            this.ilPanel1 = new ILNumerics.Drawing.ILPanel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.openGLControl1)).BeginInit();
@@ -80,7 +85,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(4, 314);
+            this.richTextBox1.Location = new System.Drawing.Point(6, 376);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(391, 88);
             this.richTextBox1.TabIndex = 35;
@@ -89,23 +94,23 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(23, 164);
+            this.textBox3.Location = new System.Drawing.Point(68, 350);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(74, 20);
+            this.textBox3.Size = new System.Drawing.Size(53, 20);
             this.textBox3.TabIndex = 34;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 138);
+            this.textBox2.Location = new System.Drawing.Point(9, 350);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
+            this.textBox2.Size = new System.Drawing.Size(53, 20);
             this.textBox2.TabIndex = 33;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(23, 112);
+            this.textBox6.Location = new System.Drawing.Point(9, 324);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(74, 20);
+            this.textBox6.Size = new System.Drawing.Size(53, 20);
             this.textBox6.TabIndex = 32;
             // 
             // btnDiscc
@@ -165,30 +170,30 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 242);
+            this.textBox1.Location = new System.Drawing.Point(127, 324);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(74, 20);
+            this.textBox1.Size = new System.Drawing.Size(53, 20);
             this.textBox1.TabIndex = 38;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(23, 216);
+            this.textBox4.Location = new System.Drawing.Point(127, 350);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(74, 20);
+            this.textBox4.Size = new System.Drawing.Size(53, 20);
             this.textBox4.TabIndex = 37;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(23, 190);
+            this.textBox5.Location = new System.Drawing.Point(68, 324);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(74, 20);
+            this.textBox5.Size = new System.Drawing.Size(53, 20);
             this.textBox5.TabIndex = 36;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(23, 268);
+            this.textBox7.Location = new System.Drawing.Point(186, 350);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(74, 20);
+            this.textBox7.Size = new System.Drawing.Size(53, 20);
             this.textBox7.TabIndex = 39;
             // 
             // label3
@@ -215,7 +220,7 @@
             // 
             // btnSend2
             // 
-            this.btnSend2.Location = new System.Drawing.Point(289, 43);
+            this.btnSend2.Location = new System.Drawing.Point(199, 70);
             this.btnSend2.Name = "btnSend2";
             this.btnSend2.Size = new System.Drawing.Size(75, 23);
             this.btnSend2.TabIndex = 42;
@@ -229,7 +234,7 @@
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(115, 99);
+            this.zedGraphControl1.Location = new System.Drawing.Point(6, 99);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
             this.zedGraphControl1.ScrollMaxX = 0D;
@@ -244,78 +249,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(300, 80);
+            this.label1.Location = new System.Drawing.Point(12, 308);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 44;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // airSpeedIndicatorInstrumentControl1
-            // 
-            this.airSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(441, 46);
-            this.airSpeedIndicatorInstrumentControl1.Name = "airSpeedIndicatorInstrumentControl1";
-            this.airSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.airSpeedIndicatorInstrumentControl1.TabIndex = 45;
-            this.airSpeedIndicatorInstrumentControl1.Text = "airSpeedIndicatorInstrumentControl1";
-            // 
-            // altimeterInstrumentControl1
-            // 
-            this.altimeterInstrumentControl1.Location = new System.Drawing.Point(559, 46);
-            this.altimeterInstrumentControl1.Name = "altimeterInstrumentControl1";
-            this.altimeterInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.altimeterInstrumentControl1.TabIndex = 46;
-            this.altimeterInstrumentControl1.Text = "altimeterInstrumentControl1";
-            // 
-            // attitudeIndicatorInstrumentControl1
-            // 
-            this.attitudeIndicatorInstrumentControl1.Location = new System.Drawing.Point(441, 129);
-            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
-            this.attitudeIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.attitudeIndicatorInstrumentControl1.TabIndex = 47;
-            this.attitudeIndicatorInstrumentControl1.Text = "attitudeIndicatorInstrumentControl1";
-            // 
-            // instrumentControl1
-            // 
-            this.instrumentControl1.Location = new System.Drawing.Point(559, 164);
-            this.instrumentControl1.Name = "instrumentControl1";
-            this.instrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.instrumentControl1.TabIndex = 48;
-            this.instrumentControl1.Text = "instrumentControl1";
-            // 
-            // headingIndicatorInstrumentControl1
-            // 
-            this.headingIndicatorInstrumentControl1.Location = new System.Drawing.Point(441, 215);
-            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
-            this.headingIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.headingIndicatorInstrumentControl1.TabIndex = 49;
-            this.headingIndicatorInstrumentControl1.Text = "headingIndicatorInstrumentControl1";
-            // 
-            // turnCoordinatorInstrumentControl1
-            // 
-            this.turnCoordinatorInstrumentControl1.Location = new System.Drawing.Point(559, 298);
-            this.turnCoordinatorInstrumentControl1.Name = "turnCoordinatorInstrumentControl1";
-            this.turnCoordinatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.turnCoordinatorInstrumentControl1.TabIndex = 50;
-            this.turnCoordinatorInstrumentControl1.Text = "turnCoordinatorInstrumentControl1";
-            // 
-            // verticalSpeedIndicatorInstrumentControl1
-            // 
-            this.verticalSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(441, 298);
-            this.verticalSpeedIndicatorInstrumentControl1.Name = "verticalSpeedIndicatorInstrumentControl1";
-            this.verticalSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
-            this.verticalSpeedIndicatorInstrumentControl1.TabIndex = 51;
-            this.verticalSpeedIndicatorInstrumentControl1.Text = "verticalSpeedIndicatorInstrumentControl1";
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(199, 70);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 52;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // openFileDialog1
             // 
@@ -328,7 +267,7 @@
             this.renderToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(948, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1297, 24);
             this.menuStrip1.TabIndex = 53;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -421,9 +360,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.openGLControl1);
-            this.panel1.Location = new System.Drawing.Point(653, 29);
+            this.panel1.Location = new System.Drawing.Point(733, 117);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 373);
+            this.panel1.Size = new System.Drawing.Size(274, 347);
             this.panel1.TabIndex = 54;
             // 
             // openGLControl1
@@ -436,21 +375,149 @@
             this.openGLControl1.Location = new System.Drawing.Point(0, 0);
             this.openGLControl1.Name = "openGLControl1";
             this.openGLControl1.RenderContextType = SharpGL.RenderContextType.NativeWindow;
-            this.openGLControl1.Size = new System.Drawing.Size(283, 373);
-            this.openGLControl1.TabIndex = 3;
-            this.openGLControl1.OpenGLDraw += new System.Windows.Forms.PaintEventHandler(this.openGLControl1_OpenGLDraw_1);
+            this.openGLControl1.Size = new System.Drawing.Size(274, 347);
+            this.openGLControl1.TabIndex = 6;
+            this.openGLControl1.OpenGLDraw += new System.Windows.Forms.PaintEventHandler(this.openGLControl1_OpenGLDraw_2);
+            // 
+            // gmap
+            // 
+            this.gmap.Bearing = 0F;
+            this.gmap.CanDragMap = true;
+            this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gmap.GrayScaleMode = false;
+            this.gmap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gmap.LevelsKeepInMemmory = 5;
+            this.gmap.Location = new System.Drawing.Point(292, 70);
+            this.gmap.MarkersEnabled = true;
+            this.gmap.MaxZoom = 2;
+            this.gmap.MinZoom = 2;
+            this.gmap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gmap.Name = "gmap";
+            this.gmap.NegativeMode = false;
+            this.gmap.PolygonsEnabled = true;
+            this.gmap.RetryLoadTile = 0;
+            this.gmap.RoutesEnabled = true;
+            this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gmap.ShowTileGridLines = false;
+            this.gmap.Size = new System.Drawing.Size(418, 298);
+            this.gmap.TabIndex = 55;
+            this.gmap.Zoom = 0D;
+            this.gmap.Load += new System.EventHandler(this.gmap_Load);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(292, 43);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 56;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(419, 43);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(141, 20);
+            this.textBox8.TabIndex = 57;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(566, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "label4";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(186, 322);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "Fetch";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // verticalSpeedIndicatorInstrumentControl1
+            // 
+            this.verticalSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(530, 380);
+            this.verticalSpeedIndicatorInstrumentControl1.Name = "verticalSpeedIndicatorInstrumentControl1";
+            this.verticalSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.verticalSpeedIndicatorInstrumentControl1.TabIndex = 51;
+            this.verticalSpeedIndicatorInstrumentControl1.Text = "verticalSpeedIndicatorInstrumentControl1";
+            // 
+            // turnCoordinatorInstrumentControl1
+            // 
+            this.turnCoordinatorInstrumentControl1.Location = new System.Drawing.Point(619, 382);
+            this.turnCoordinatorInstrumentControl1.Name = "turnCoordinatorInstrumentControl1";
+            this.turnCoordinatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.turnCoordinatorInstrumentControl1.TabIndex = 50;
+            this.turnCoordinatorInstrumentControl1.Text = "turnCoordinatorInstrumentControl1";
+            // 
+            // headingIndicatorInstrumentControl1
+            // 
+            this.headingIndicatorInstrumentControl1.Location = new System.Drawing.Point(912, 33);
+            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
+            this.headingIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.headingIndicatorInstrumentControl1.TabIndex = 49;
+            this.headingIndicatorInstrumentControl1.Text = "headingIndicatorInstrumentControl1";
+            // 
+            // attitudeIndicatorInstrumentControl1
+            // 
+            this.attitudeIndicatorInstrumentControl1.Location = new System.Drawing.Point(831, 33);
+            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
+            this.attitudeIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.attitudeIndicatorInstrumentControl1.TabIndex = 47;
+            this.attitudeIndicatorInstrumentControl1.Text = "attitudeIndicatorInstrumentControl1";
+            // 
+            // altimeterInstrumentControl1
+            // 
+            this.altimeterInstrumentControl1.Location = new System.Drawing.Point(431, 382);
+            this.altimeterInstrumentControl1.Name = "altimeterInstrumentControl1";
+            this.altimeterInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.altimeterInstrumentControl1.TabIndex = 46;
+            this.altimeterInstrumentControl1.Text = "altimeterInstrumentControl1";
+            // 
+            // airSpeedIndicatorInstrumentControl1
+            // 
+            this.airSpeedIndicatorInstrumentControl1.Location = new System.Drawing.Point(750, 33);
+            this.airSpeedIndicatorInstrumentControl1.Name = "airSpeedIndicatorInstrumentControl1";
+            this.airSpeedIndicatorInstrumentControl1.Size = new System.Drawing.Size(75, 76);
+            this.airSpeedIndicatorInstrumentControl1.TabIndex = 45;
+            this.airSpeedIndicatorInstrumentControl1.Text = "airSpeedIndicatorInstrumentControl1";
+            // 
+            // ilPanel1
+            // 
+            this.ilPanel1.Driver = ILNumerics.Drawing.RendererTypes.OpenGL;
+            this.ilPanel1.Editor = null;
+            this.ilPanel1.Location = new System.Drawing.Point(1012, 117);
+            this.ilPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ilPanel1.Name = "ilPanel1";
+            this.ilPanel1.Rectangle = ((System.Drawing.RectangleF)(resources.GetObject("ilPanel1.Rectangle")));
+            this.ilPanel1.ShowUIControls = false;
+            this.ilPanel1.Size = new System.Drawing.Size(274, 347);
+            this.ilPanel1.TabIndex = 60;
+            this.ilPanel1.Timeout = ((uint)(0u));
+            this.ilPanel1.Load += new System.EventHandler(this.ilPanel1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 421);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1297, 481);
+            this.Controls.Add(this.ilPanel1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.gmap);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.verticalSpeedIndicatorInstrumentControl1);
             this.Controls.Add(this.turnCoordinatorInstrumentControl1);
             this.Controls.Add(this.headingIndicatorInstrumentControl1);
-            this.Controls.Add(this.instrumentControl1);
             this.Controls.Add(this.attitudeIndicatorInstrumentControl1);
             this.Controls.Add(this.altimeterInstrumentControl1);
             this.Controls.Add(this.airSpeedIndicatorInstrumentControl1);
@@ -511,11 +578,9 @@
         private AirSpeedIndicatorInstrumentControl airSpeedIndicatorInstrumentControl1;
         private AltimeterInstrumentControl altimeterInstrumentControl1;
         private AttitudeIndicatorInstrumentControl attitudeIndicatorInstrumentControl1;
-        private InstrumentControl instrumentControl1;
         private HeadingIndicatorInstrumentControl headingIndicatorInstrumentControl1;
         private TurnCoordinatorInstrumentControl turnCoordinatorInstrumentControl1;
         private VerticalSpeedIndicatorInstrumentControl verticalSpeedIndicatorInstrumentControl1;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -531,7 +596,13 @@
         private System.Windows.Forms.ToolStripMenuItem solidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lighterToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private GMap.NET.WindowsForms.GMapControl gmap;
         private SharpGL.OpenGLControl openGLControl1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private ILNumerics.Drawing.ILPanel ilPanel1;
     }
 }
 
